@@ -1,0 +1,40 @@
+body {
+	background: white;
+	font-family: sans-serif;
+	padding: 1em;
+}
+
+section.controlls {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+	gap: 1em;
+
+	div.controller {
+		display: flex;
+		gap: 0.6em;
+		padding: 0.8em;
+		flex-direction: column;
+		border-radius: 0.5em;
+		background: lightgray;
+
+		&.on { background: orange }
+
+		audio { display: none }
+		
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+	
+			svg {
+				width: 1em;
+				padding: 0.3em;
+				cursor: pointer;
+
+				&.play { display: block }
+				&.stop { display: none }
+			}
+		}
+	}
+}
+
