@@ -1,7 +1,7 @@
-import sounds from "/soundbank.js";
+import sounds from "./soundbank.js";
 
 const defaultVolume = 0.4;
-const soundbankDirectory = "/sounds";
+const soundbankDirectory = "./sounds";
 
 window.addEventListener("load", () => {
 	const controllsElement = document.querySelector(".controlls");
